@@ -1,0 +1,585 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+body {
+  background-color: #fafbfe !important;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+
+/*HEADER*/
+
+#menu-button{
+	border: none;
+	outline: none;
+	z-index: 10;
+}
+
+.container {
+  max-width: 90vw;
+  margin: auto;
+  position: relative;
+}
+
+header {
+    background-color: transparent;
+    padding: 0 20vw;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    transition: all 1s;
+}
+
+.sticky{
+
+  background-color: white;
+  color: black !important;
+}
+
+
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+header nav a {
+    padding: 1em;
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+#logo-image img {
+    width:15vw;
+}
+
+#logo-image {
+    line-height: 0;
+}
+
+a:not([href]) {
+    pointer-events: none;
+}
+
+
+/*effet wavy*/
+
+
+.custom-shape-divider-bottom-1654595565 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1654595565 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 128px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1654595565 .shape-fill {
+  fill: #fafbfe;
+}
+
+/*Body*/
+
+.container {
+  max-width: 90vw;
+  margin: auto;
+  position: relative;
+}
+
+
+
+a:not([href]) {
+  pointer-events: none;
+}
+
+/*--------------------------------------------------------------
+# intro
+--------------------------------------------------------------*/
+
+.intro {
+  height: 96vh;
+
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.legende {
+  color: black;
+  text-align: center;
+  padding-bottom: 1vh;
+}
+
+.legende h1 {
+  color: black;
+  opacity: 0.5;
+}
+.legende img{
+  width: 31.5vh;
+  padding-bottom: 5vh;
+}
+
+.legende p{
+  padding-bottom:5vh ;
+}
+/*--------------------------------------------------------------
+# searchbarre
+--------------------------------------------------------------*/
+
+.ddk_searcharea {
+  width: 60%;
+  transition: all 0.3s;
+}
+
+.ddk_searcharea:hover {
+  cursor: pointer;
+  transform: translateY(0);
+}
+
+.ddk_search_group {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid rgba(1, 41, 112, 0.2);
+  background-color: white;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 100%;
+  height: 7vh;
+}
+
+.ddk_searchinput_formfield {
+  /*float: left;*/
+  width: 90%;
+  font-style: italic;
+  font-size: 90%;
+  color: black;
+  padding-left: 1%;
+  background-color: #fff;
+  border: none;
+}
+
+.ddk_searchinput_formfield:focus {
+  outline: none;
+}
+
+.ddk_searchinput_searchbutton {
+  /*float:left;*/
+  padding: 3% 3% 3% 3%;
+  background-image: url("asset/img/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+  background-size: 3vh;
+  border: none;
+  cursor: pointer;
+}
+
+/*--------------------------------------------------------------
+# nav
+--------------------------------------------------------------*/
+.filtre img {
+  width: 1.8vw;
+}
+.filtre {
+  padding: 0 0.4vw;
+  list-style: none;
+}
+.filtre ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.itemSelected,
+.filterAsset:hover {
+  border-radius: 5px;
+  color: #6a0fd2;
+  padding: 2px;
+}
+
+.filtre .dropdown ul {
+  display: block;
+  position: fixed;
+  margin: 0;
+  left: 0%;
+  padding: 10px 0 0 0;
+  top: 100%;
+  visibility: hidden;
+  background: white;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+  border-radius: 4px;
+}
+.filtre .dropdown ul li {
+  padding: 0 5%;
+  width: 13vw;
+  height: 5.5vh;
+}
+
+.filtre .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.filtre .dropdown2 ul {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 10px 0 0 0;
+  top: 50%;
+  left: 100%;
+  visibility: hidden;
+  background: white;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+  border-radius: 4px;
+}
+.filtre .dropdown2 ul li {
+  padding: 0 5%;
+  width: 13vw;
+  height: 5.5vh;
+}
+
+.filtre .dropdown2:hover > ul {
+  opacity: 1;
+  top: -50%;
+  visibility: visible;
+}
+.reset {
+  width: 8%;
+  background-image: url("asset/img/x.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+/*--------------------------------------------------------------
+# boutons presentation
+--------------------------------------------------------------*/
+.tooltipe {
+  display: inline-block;
+}
+
+.tooltipe .tooltiptext {
+
+  opacity: 0;
+  width: fit-content;
+  height: fit-content;
+  background-color: white;
+  color: black;
+  text-align: start;
+  border-radius: 6px;
+  padding: 10px 10px;
+  transition: all 0.5s;
+
+  /* Position the tooltip */
+  position: absolute;
+  overflow-wrap: break-word;
+  margin-block-start: 110px; 
+  z-index: 3;
+}
+
+.tooltipe:hover .tooltiptext {
+  opacity: 1;
+
+}
+
+.tooltipe li{
+  line-height: 5vh;
+  list-style: none;
+}
+
+.tooltipe a{
+  text-align:start;
+  color: black;
+  text-decoration: none;
+}
+
+.tooltipe a:hover{
+  color: #6a0fd2;
+}
+.elements {
+  width: 60%;
+  padding-top: 15vh;
+  padding-bottom: 10vh;
+
+  display: flex;
+  justify-content: space-between;
+}
+.elements .drop img {
+  width: 1.7vw;
+}
+
+.imgle {
+  margin: 10px 0 0 0;
+}
+
+.drop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: solid white 10px;
+  border-radius: 999px;
+  line-height: 0;
+  background-color: white;
+  width: fit-content;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: inherit;
+  transition: all 1s;
+}
+
+.enca {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+}
+
+.def {
+  opacity: 0;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 3%;
+  transition: all 0.5s;
+  width: 50%;
+}
+
+.enca:hover {
+  outline: solid 1px white;
+  border-radius: 5px;
+}
+
+.dos {
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# About Us
+--------------------------------------------------------------*/
+.hr {
+  width: 100px;
+  margin: auto;
+  color: black;
+  opacity: 1;
+}
+
+.need .title {
+  text-align: center;
+  padding: 4% 0 4% 0;
+  font-weight: bold;
+}
+.need .title h1 {
+  font-size: 1.7rem;
+  padding-bottom: 1%;
+}
+
+.containere {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-bottom: 4%;
+  font-size: 1.2vw;
+}
+
+.descrip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  white-space: nowrap;
+  width: 30%;
+}
+
+.descrip a {
+  text-decoration: none;
+  color: black;
+  padding-bottom: 3%;
+}
+.descrip ul {
+  list-style: none;
+  padding: 0;
+  line-height: 2;
+}
+
+.descrip ul i {
+  padding-right: 1%;
+}
+
+.video {
+  padding-left: 10%;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer-top {
+  padding-top: 2%;
+}
+
+.container ul {
+  list-style: none;
+  padding: 0;
+  line-height: 3;
+}
+
+.container ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.container ul li {
+  font-size: 1vw;
+}
+
+/*--------------------------------------------------------------
+# modal
+--------------------------------------------------------------*/
+.modal-content{
+  width: auto !important;
+}
+.picture{
+  width: 65vw;
+
+}
+
+.modal-dialog-centered {
+  justify-content: center;
+}
+
+
+
+.waves {
+  position: relative;
+  width: 100vw;
+  height: 15vh;
+  z-index: 1;
+}
+
+.content {
+  position:relative;
+  height:20vh;
+  text-align:center;
+  background-color: white;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+
+
+
+
+
+.animated{
+  -webkit-animation: floating 3s ease infinite;
+  animation: floating 3s ease infinite;
+}
+.animated2{
+  -webkit-animation: floating 5s ease infinite;
+  animation: floating 5s ease infinite;
+}
+.animated3{
+  -webkit-animation: floating 4s ease infinite;
+  animation: floating 4s ease infinite;
+}
+
+
+.img-fluid {
+  display: block;
+  position: absolute;
+  max-width: 100vh;
+  height: auto;
+  left: 50%;
+  top: -40%;  
+
+}
+
+
+
+@keyframes floating {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
